@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;700&display=swap');
+
+:root {
+    --darkBlue100: #609ED4;
+    --darkBlue200: #356EA9;
+    --darkBlue300: #0A3871;
+    --darkBlue400: #072B61;
+    --darkBlue500: #052051;
+    --gray100: #CED4DA;
+    --gray200: #ADB5BD;
+    --gray300: #868E96;
+    --gray400: #495057;
+    --gray500: #343A40;
+    font-family: 'Dosis', sans-serif;
+}
+
+html {
+    font-size: 62, 5%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gray100);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin: 4rem 4rem;
+}
+
+header h1 {
+    padding: 0 1rem;
+    color: var(--darkBlue300);
+    font-size: 2.5rem;
+}
+
+.contenedorBotonoesInicio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.botonInicio,
+.botonAgregar,
+.botonGuardar,
+.botonCancelar {
+    border-radius: 2.4rem;
+}
+
+.botonInicio {
+    color: white;
+    background-color: var(--darkBlue300);
+    border-color: var(--darkBlue300);
+    font-size: 1.8rem;
+    padding: 2.8rem;
+    width: 60%;
+}
+
+.botonInicio:hover,
+.botonGuardar:hover {
+    color: white;
+    background-color: var(--darkBlue400);
+    border-color: var(--darkBlue400);
+    font-weight: 600;
+}
+
+.botonInicio:active,
+.botonGuardar:active {
+    color: var(--gray300);
+    background-color: var(--darkBlue500);
+    border-color: var(--gray300);
+}
+
+.botonAgregar {
+    color: var(--darkBlue300);
+    background-color: white;
+    border-color: var(--darkBlue300);
+    font-size: 1.8rem;
+    padding: 2.4rem;
+    width: 50%;
+}
+
+.botonAgregar:hover,
+.botonCancelar:hover {
+    background-color: var(--gray100);
+    font-weight: 600;
+}
+
+.botonAgregar:active,
+.botonCancelar:active {
+    background-color: var(--gray300);
+}
+
+.contenedorAgregarPalabra {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputPalabraNueva {
+    background-color: none;
+    width: 100%;
+}
+
+.botonesAgregarPalabra {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.botonGuardar {
+    color: white;
+    background-color: var(--darkBlue300);
+    border-color: var(--darkBlue300);
+    font-size: 1.8rem;
+    padding: 2.4rem;
+}
+
+.botonCancelar {
+    color: var(--darkBlue300);
+    background-color: white;
+    border-color: var(--darkBlue300);
+    font-size: 1.8rem;
+    padding: 2.4rem;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--darkBlue300);
+    width: 100%;
+    color: var(--gray100);
+    margin-top: 1rem;
+    padding: 1rem 0;
+    gap: 1rem;
+}
+
+.imagenPerfil {
+    width: 5%;
+    border-radius: 50%;
+    border: 2px solid var(--gray100);
+}
+
+.infoRedes {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.infoRedes img {
+    width: 1rem;
+    height: 1rem;
+}
